@@ -1,0 +1,33 @@
+{
+  "extends": [
+    "tslint:recommended",
+    "tslint-react",
+    "tslint-config-prettier",
+    "tslint-react-hooks"
+  ],
+  "linterOptions": {
+    "exclude": [
+      "config/**/*.js",
+      "node_modules/**/*.ts",
+      "coverage/lcov-report/*.js"
+    ]
+  },
+  "defaultSeverity": "warning",
+  "rules": {
+    "array-type": [
+      true,
+      "generic"
+    ],
+    "interface-name": false,
+    "interface-over-type-literal": false,
+    "member-access": false,
+    "member-ordering": false,
+    "no-any": true,
+    "no-namespace": false,
+    "no-non-null-assertion": true,
+    "object-literal-sort-keys": false,
+    "jsx-no-lambda": false,
+    "max-classes-per-file": false,
+    "react-hooks-nesting": "error"
+  }
+}
